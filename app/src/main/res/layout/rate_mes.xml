@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    android:padding="10dp">
+
+
+    <ImageButton
+        android:id="@+id/closeButton"
+
+
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:scaleType="centerInside"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="0dp"
+
+
+        android:src="@drawable/close"
+        tools:ignore="ContentDescription" />
+
+
+
+    <TextView
+        android:id="@+id/txtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/closeButton"
+        android:layout_margin="10dp"
+
+
+        android:text="@string/howrate"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryCenter"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linRate"
+        android:layout_below="@+id/txtRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+    <ImageButton
+        android:id="@+id/star1"
+        android:tag="star1"
+        style="@style/starStyle"
+        tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/star2"
+            android:tag="star2"
+            style="@style/starStyle"
+            tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/star3"
+            android:tag="star3"
+            style="@style/starStyle"
+            tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/star4"
+            android:tag="star4"
+            style="@style/starStyle"
+            tools:ignore="ContentDescription" />
+        <ImageButton
+            android:id="@+id/star5"
+            android:tag="star5"
+            style="@style/starStyle"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tapRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linRate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+
+
+        android:text="@string/taprate"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimaryCenter"
+        android:gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/okButton"
+
+
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:scaleType="centerInside"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tapRate"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.2"
+
+
+
+        android:src="@drawable/save_new"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

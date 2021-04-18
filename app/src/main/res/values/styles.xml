@@ -1,0 +1,74 @@
+<resources>
+
+
+    <style name="starStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:src">@drawable/star_gray</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_margin">5dp</item>
+    </style>
+
+
+    <style name="customProgress" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:indeterminateDrawable">@drawable/progress</item>
+        <item name="android:duration">10</item>
+        <item name="android:animationCache">true</item>
+        <item name="android:drawingCacheQuality">low</item>
+        <item name="android:persistentDrawingCache">animation</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorAlert</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="messStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/colorPrimaryCenter</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">top</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="MyTheme" parent="@style/AppTheme.NoActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+        <item name="colorControlNormal">@color/white</item>  <!-- Toolbar back button and settings color  -->
+
+        <!--
+
+        <item name="colorControlActivated">@color/colorPrimaryCenter</item>
+
+        Cursor color
+
+        -->
+
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+
+    </style>
+
+</resources>

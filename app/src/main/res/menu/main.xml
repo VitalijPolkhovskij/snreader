@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GamePage"
+    >
+
+
+    <item
+        android:id="@+id/action_help"
+        android:orderInCategory="100"
+        android:title="@string/help"
+        android:icon="@drawable/help1"
+        />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/about"
+        android:icon="@drawable/info1"
+
+        />
+
+    <item
+        android:orderInCategory="100"
+        android:id="@+id/action_share"
+        android:icon="@drawable/share1"
+        android:title="@string/share"
+        />
+
+
+    <group android:id="@+id/add_action">
+
+        <item
+            android:orderInCategory="100"
+            android:id="@+id/action_exit"
+            android:icon="@drawable/exit"
+            android:title="@string/exit"
+            />
+    </group>
+
+</menu>

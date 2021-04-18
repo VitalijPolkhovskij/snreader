@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/layH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        >
+
+
+    <ImageView
+        android:id="@+id/imgL"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/tech_support"
+        tools:ignore="ContentDescription" />
+
+
+        <ImageButton
+            android:id="@+id/youTb"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:scaleType="centerInside"
+            android:layout_alignParentEnd="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/youtobe"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textMess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layH"
+        android:text="===="
+        android:textColor="@color/colorPrimaryCenter"
+        android:gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/okButton"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:scaleType="centerInside"
+        android:background="?selectableItemBackgroundBorderless"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textMess"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+
+
+
+        android:src="@drawable/save_new"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

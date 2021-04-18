@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">"SN сканер"</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_start">Старт</string>
+    <string name="error">Ошибка</string>
+    <string name="perm_grant_access">Для работы приложения необходим \u0020</string>
+    <string name="perm_camera">доступ к камере</string>
+    <string name="copypast">Скопирован в буфер обмена</string>
+
+
+    <string name="badpermission">Без доступа к камере работа приложения невозможна</string>
+    <string name="permission_camera_rationale">Доступ к камере нужен для считывания и фото S/N</string>
+    <string name="no_camera_permission">Без разрешения доступа к камере приложение не может работать.</string>
+    <string name="low_storage_error">Недостаточно памяти…</string>
+    <string name="title_activity_main">S/N ридер</string>
+    <string name="ocr_header">Считанный номер</string>
+    <string name="read_text">Считать номер</string>
+    <string name="only_sn">Влючить фильтры</string>
+    <string name="autosave">Автосохранение</string>
+    <string name="auto_focus">Автофокус</string>
+    <string name="use_flash">Подсветка</string>
+    <string name="ocr_success">Номер считан</string>
+    <string name="ocr_failure">Текст не считан</string>
+    <string name="ocr_error">Ошибка чтения текста: </string>
+    <string name="unablestartcamera">Невозможно включить камеру.</string>
+    <string name="imagenotsaved">Изображение не сохранено</string>
+    <string name="emptyid">Пустой идентификатор…</string>
+    <string name="svlastsym">Сохраняет последнюю группу символов</string>
+    <string name="idnums">Идентификатор номера - строка, к-я начинается с \"Serial N\". Это может быть \"Serial Number:\", Serial Num" и т.п.</string>
+    <string name="isnos">\"S/N:\" часто распознаeтся как \"SIN:\"</string>
+    <string name="title">Заголовок:</string>
+    <string name="filters">Фильтры</string>
+    <string name="stringwithn">Строка с к-вом символов:</string>
+    <string name="sn">S/N:</string>
+    <string name="s_n">SN:</string>
+    <string name="serialn">Serial N</string>
+    <string name="serno">SER NO</string>
+    <string name="sin">SIN:</string>
+    <string name="snid">SNID:</string>
+    <string name="fortofor">4 числа из 4х цифр</string>
+    <string name="fru">FRU:</string>
+    <string name="addid">Добавить идентификатор</string>
+    <string name="addidnum">Введите идентификатор номера и минимальное к-во символов (по умолчанию 5)</string>
+    <string name="id">Идентификатор…</string>
+    <string name="countchar">К-во символов…</string>
+    <string name="copy">Скопировать</string>
+    <string name="send">Отправить</string>
+    <string name="help">Справка</string>
+    <string name="about">О приложении</string>
+    <string name="share">Поделиться</string>
+    <string name="exit">Выход</string>
+    <string name="myemail">vistapol24@gmail.com</string>
+    <string name="about_text">Приложение считывает номера (серийные и другие) по стандартной или настраиваемой маске</string>
+    <string name="idauto">Идентификаторы номера для автосохранения (начало номера или его структура)</string>
+    <string name="showdefaultrules">Показать фильтры по умолчанию</string>
+
+    <string name="howrate">Как вы оцениваете наше приложение?</string>
+    <string name="taprate">Нажмите на количество звездочек, чтобы оценить его в App Store</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2004759106570273/3077621108</string>
+
+</resources>

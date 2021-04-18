@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">"SN scanner"</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="app_start">Start</string>
+    <string name="error">Error</string>
+    <string name="perm_grant_access">The application requires \u0020</string>
+    <string name="perm_camera">access to the camera</string>
+    <string name="copypast">Copied to clipboard</string>
+
+
+    <string name="badpermission">The application cannot work without access to the camera</string>
+    <string name="permission_camera_rationale">Camera access is required to read and photo S / N</string>
+    <string name="no_camera_permission">Without permission to access the camera, the application cannot work</string>
+    <string name="low_storage_error">Not enough memory…</string>
+    <string name="title_activity_main">S/N reader</string>
+    <string name="ocr_header">Number</string>
+    <string name="read_text">Read number</string>
+    <string name="only_sn">Enable filters</string>
+    <string name="autosave">Autosave</string>
+    <string name="auto_focus">Autofocus</string>
+    <string name="use_flash">Backlight</string>
+    <string name="ocr_success">Number read</string>
+    <string name="ocr_failure">No Text captured</string>
+    <string name="ocr_error">Error reading text:</string>
+    <string name="unablestartcamera">Unable to start camera source</string>
+    <string name="imagenotsaved">Image not saved</string>
+    <string name="emptyid">Empty identifier…</string>
+    <string name="svlastsym">Retains the last group of characters</string>
+    <string name="idnums">The number identifier is a string that starts with \"Serial N\". It can be \"Serial Number:\", Serial Num\", etc.</string>
+    <string name="isnos">\"S/N:\" is often recognized as \"SIN:\"</string>
+    <string name="title">Title:</string>
+    <string name="filters">Filters</string>
+    <string name="stringwithn">String with a number of characters:</string>
+    <string name="sn">S/N:</string>
+    <string name="s_n">SN:</string>
+    <string name="serialn">Serial N</string>
+    <string name="serno">SER NO</string>
+    <string name="sin">SIN:</string>
+    <string name="snid">SNID:</string>
+    <string name="fortofor">4 numbers of 4 digits</string>
+    <string name="fru">FRU:</string>
+    <string name="addid">Add ID</string>
+    <string name="addidnum">Enter number ID and minimum number of characters (default 5)</string>
+    <string name="id">ID…</string>
+    <string name="countchar">Number of characters…</string>
+    <string name="copy">Copy</string>
+    <string name="send">Send</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+    <string name="share">Share</string>
+    <string name="exit">Exit</string>
+    <string name="myemail">vistapol24@gmail.com</string>
+    <string name="about_text">The application reads numbers (serial and others) using a standard or custom mask</string>
+    <string name="idauto">Number identifiers for autosave (beginning of number or its structure)</string>
+
+    <string name="howrate">How do you rate our App?</string>
+    <string name="taprate">Tap the number of stars to rate it on the App Store</string>
+
+
+    <string name="showdefaultrules">Show default filters</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2004759106570273/3077621108</string>
+
+
+</resources>
+

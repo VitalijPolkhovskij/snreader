@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorBachground"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ocr_header"
+
+        android:textColor="@color/white"
+        android:layout_below="@+id/toolbar"
+
+        android:layout_marginStart="10dp"
+        android:layout_alignParentStart="true"
+        />
+
+    <RelativeLayout
+
+        android:id="@+id/layResult"
+        android:layout_below="@+id/status_message"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        >
+
+        <RelativeLayout
+
+            android:id="@+id/layR"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_alignParentStart="true"
+            android:textStyle="italic|bold"
+
+            />
+
+
+
+        <TextView
+        android:id="@+id/text_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+            android:textColor="@color/white"
+
+            android:layout_toEndOf="@+id/text_title"
+            android:textSize="18sp"
+
+            android:layout_marginStart="10dp"
+
+        />
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/butCopy"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/layR"
+        android:background="@drawable/my_button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+        android:drawableStart="@drawable/copy_past"
+
+        android:onClick="copyPaste"
+
+        android:scaleType="fitCenter"
+        android:text="@string/copy"
+        android:textSize="12sp"
+
+        tools:ignore="ContentDescription" />
+
+        <Button
+            android:id="@+id/butSend"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/layR"
+            android:background="@drawable/my_button"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:drawableStart="@drawable/send"
+
+            android:onClick="sendNumber"
+
+            android:scaleType="fitCenter"
+            android:text="@string/send"
+            android:textSize="12sp"
+
+            tools:ignore="ContentDescription" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/filters"
+        android:tag = "filters"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/filters"
+        android:background="@drawable/my_button"
+        android:layout_below="@+id/layResult"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        />
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/layCapt"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/filters"
+        android:layout_centerHorizontal="true"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+    <com.ortiz.touchview.TouchImageView
+        android:id="@+id/captImage"
+        android:src="@drawable/tech_support"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent"
+        />
+
+
+        <ProgressBar
+            style="@style/customProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/zooPic"
+        android:src="@drawable/zoom2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+
+        android:background="@android:color/transparent"
+        tools:ignore="ContentDescription" />
+
+
+
+
+    <CheckBox
+        android:id="@+id/auto_focus"
+        android:tag="auto_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_focus"
+        android:textColor="@color/white"
+        android:layout_above="@+id/use_flash"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/use_flash"
+        android:tag="use_flash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/use_flash"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/read_text"
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/check_SN"
+        android:tag="check_SN"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/only_sn"
+        android:layout_above="@+id/read_text"
+        android:layout_marginBottom="10dp"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+
+        android:checked="true" />
+
+    <CheckBox
+        android:id="@+id/autoSave"
+        android:tag="autoSave"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="@string/autosave"
+        android:layout_above="@+id/check_SN"
+        android:button="@null"
+        android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"
+        android:checked="true" />
+
+
+
+    <Button
+        android:id="@+id/read_text"
+        android:tag="read_text"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:textColor="@color/white"
+        android:text="@string/read_text"
+        android:background="@drawable/my_button"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+
+        android:layout_above="@+id/adView"
+
+
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:layout_marginBottom="40dp"
+        ads:adUnitId="ca-app-pub-2004759106570273/3077621108">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

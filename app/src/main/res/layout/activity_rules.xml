@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorBachground"
+    tools:context=".Rules">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"
+
+        app:titleTextColor="@color/white"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        />
+
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/idauto"
+        android:gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <ScrollView
+        android:layout_below="@+id/status_message"
+        android:layout_above="@+id/add_text"
+        android:id="@+id/scrollStartPage"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        >
+
+    <LinearLayout
+        android:id="@+id/laySwitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:id="@+id/showDefRules"
+            android:tag="showDefRules"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:checked="true"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/showdefaultrules" />
+
+
+        <LinearLayout
+            android:id="@+id/layStandartSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+
+                android:id="@+id/switchNumber"
+                android:tag="switchNumber"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:checked="false"
+                android:layout_toStartOf="@+id/inputSize"
+                android:layout_marginEnd="40dp"
+                android:textColor="@android:color/white"
+                android:text="@string/stringwithn" />
+
+
+            <EditText
+                android:id="@+id/inputSize"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+
+                android:text="12"
+                android:layout_toStartOf="@+id/info7"
+                android:layout_marginEnd="5dp"
+
+                android:textColor="@color/white"
+
+                android:inputType="number"
+
+                android:autofillHints=""
+                tools:ignore="HardcodedText,LabelFor">
+
+            </EditText>
+
+
+
+            <ImageButton
+                android:id="@+id/info7"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+
+                android:src="@drawable/info"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+
+            android:id="@+id/switchSN"
+            android:tag="switchSN"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/info1"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/sn" />
+
+
+        <ImageButton
+            android:id="@+id/info1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+
+
+        <RelativeLayout
+
+            android:layout_marginTop="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSNN"
+                android:tag="switchSNN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:checked="true"
+                android:layout_toStartOf="@+id/infoSNN"
+                android:layout_marginEnd="40dp"
+                android:textColor="@android:color/white"
+                android:text="@string/s_n" />
+
+
+            <ImageButton
+                android:id="@+id/infoSNN"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="?selectableItemBackgroundBorderless"
+
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+
+                android:src="@drawable/info"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSerialN"
+            android:tag="switchSerialN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/info3"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/serialn" />
+
+
+        <ImageButton
+            android:id="@+id/info3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:onClick="infoSerialN"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSERNO"
+            android:tag="switchSERNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/info33"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/serno" />
+
+
+        <ImageButton
+            android:id="@+id/info33"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:visibility="invisible"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSIN"
+            android:tag="switchSIN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/infoSIN"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/sin" />
+
+
+        <ImageButton
+            android:id="@+id/infoSIN"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:onClick="infoSIN"
+
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchSNID"
+            android:tag="switchSNID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/info41"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/snid" />
+
+
+        <ImageButton
+            android:id="@+id/info41"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchFOR"
+            android:tag="switchFOR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/info5"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/fortofor" />
+
+
+        <ImageButton
+            android:id="@+id/info5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:visibility="invisible"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchFRU"
+            android:tag="switchFRU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:layout_toStartOf="@+id/infoFRU"
+            android:layout_marginEnd="40dp"
+            android:textColor="@android:color/white"
+            android:text="@string/fru" />
+
+
+        <ImageButton
+            android:id="@+id/infoFRU"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+
+            android:background="?selectableItemBackgroundBorderless"
+
+            android:onClick="infoFRU"
+
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+
+            android:src="@drawable/info"
+            tools:ignore="ContentDescription" />
+
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/add_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/addid"
+        android:background="@drawable/my_button"
+        android:textAllCaps="false"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="addSwitch"
+        android:textColor="@color/white"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+</RelativeLayout>

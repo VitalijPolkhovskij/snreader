@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "53760238126",
+    "project_id": "snreader-b946c",
+    "storage_bucket": "snreader-b946c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53760238126:android:7e69d550cb834de72ef5bf",
+        "android_client_info": {
+          "package_name": "com.pvs.snreader"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53760238126-ef0r402r2v02vqfaje8faj3egf0bkd2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbPEYMpzEM8RrfC1AhJB_o4B9pa6PqbFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "53760238126-ef0r402r2v02vqfaje8faj3egf0bkd2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
